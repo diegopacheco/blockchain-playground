@@ -1,3 +1,6 @@
 truffle init
 
 truffle compile
+
+testrpc
+truffle migrate
