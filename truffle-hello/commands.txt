@@ -4,3 +4,8 @@ truffle compile
 
 testrpc
 truffle migrate
+
+truffle console
+
+var hello = Hello.deployed()
+hello.then(function(instance){ instance.balance.call().then(console.log); })
