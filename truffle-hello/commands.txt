@@ -9,3 +9,10 @@ truffle console
 
 var hello = Hello.deployed()
 hello.then(function(instance){ instance.balance.call().then(console.log); })
+
+truffle migrate --reset
+truffle console
+
+var accounts = web3.eth.accounts
+hello.then(function(instance){ instance.deposit.call(500).then(console.log); })
+web3.eth.getBalance(accounts[0])
