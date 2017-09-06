@@ -1,0 +1,12 @@
+# Terminal 1
+./dummy
+
+# Terminal 2
+./tendermint init
+./tendermint node
+
+# Terminal 3
+curl -s localhost:46657/status
+curl -s 'localhost:46657/broadcast_tx_commit?tx="abcd"'
+curl -s 'localhost:46657/abci_query?data="abcd"&path=""&prove=false'
+curl -s 'localhost:46657/broadcast_tx_commit?tx="name=satoshi"'
