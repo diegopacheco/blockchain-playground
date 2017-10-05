@@ -148,6 +148,9 @@ https://techcrunch.com/2017/07/25/sec-regulators-are-coming-after-icos/?ncid=rss
 TANGLE(Futuro)
 http://ukcryptocurrency.com/iota/tangle-vs-blockchain/
 
+Blockchain Could Help Us Reclaim Control of Our Personal Data
+https://hbr.org/2017/10/smart-ledgers-can-help-us-reclaim-control-of-our-personal-data
+
 Colony
 https://colony.io/
 
