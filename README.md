@@ -148,6 +148,9 @@ https://techcrunch.com/2017/07/25/sec-regulators-are-coming-after-icos/?ncid=rss
 TANGLE(Futuro)
 http://ukcryptocurrency.com/iota/tangle-vs-blockchain/
 
+Colony
+https://colony.io/
+
 Outros
 https://techcrunch.com/2017/08/02/wtf-is-bitcoin-cash-and-is-it-worth-anything/?ncid=rss
 https://www.bitcoinabc.org/
