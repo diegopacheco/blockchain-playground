@@ -151,6 +151,9 @@ http://ukcryptocurrency.com/iota/tangle-vs-blockchain/
 Blockchain Could Help Us Reclaim Control of Our Personal Data
 https://hbr.org/2017/10/smart-ledgers-can-help-us-reclaim-control-of-our-personal-data
 
+No Bitcoin-based protocol can handle more than 20M users per month
+https://runeksvendsen.github.io/blog/posts/2017-10-08-no-bitcoin-based-protocol-can-handle-more-than-20m-users-per-month.html
+
 Colony
 https://colony.io/
 
