@@ -157,6 +157,10 @@ https://runeksvendsen.github.io/blog/posts/2017-10-08-no-bitcoin-based-protocol-
 Cryptocurrency mining affects over 500 million people. And they have no idea it is happening.
 https://blog.adguard.com/en/crypto-mining-fever/
 
+Blockchain — solution for the renewable energy market.
+https://hackernoon.com/blockchain-and-energy-market-2aa6add6e86e
+https://wepower.network/
+
 Colony
 https://colony.io/
 
