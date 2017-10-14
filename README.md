@@ -160,6 +160,9 @@ https://blog.adguard.com/en/crypto-mining-fever/
 Colony
 https://colony.io/
 
+Coin-Launch
+https://coinlaunch.market/
+
 Outros
 https://techcrunch.com/2017/08/02/wtf-is-bitcoin-cash-and-is-it-worth-anything/?ncid=rss
 https://www.bitcoinabc.org/
