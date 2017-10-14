@@ -154,6 +154,9 @@ https://hbr.org/2017/10/smart-ledgers-can-help-us-reclaim-control-of-our-persona
 No Bitcoin-based protocol can handle more than 20M users per month
 https://runeksvendsen.github.io/blog/posts/2017-10-08-no-bitcoin-based-protocol-can-handle-more-than-20m-users-per-month.html
 
+Cryptocurrency mining affects over 500 million people. And they have no idea it is happening.
+https://blog.adguard.com/en/crypto-mining-fever/
+
 Colony
 https://colony.io/
 
