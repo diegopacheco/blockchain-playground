@@ -43,6 +43,9 @@ https://bitcoin.org/en/developer-guide#block-chain-overview
 Dead Coins
 http://deadcoins.com/
 
+Mastercard’s New Blockchain Is Interesting Because of What It Leaves Out
+https://www.technologyreview.com/the-download/609212/mastercards-new-blockchain-is-interesting-because-of-what-it-leaves-out/
+
 Tendermint
 https://tendermint.com/
 https://jepsen.io/analyses/tendermint-0-10-2
