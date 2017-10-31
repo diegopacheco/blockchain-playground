@@ -46,6 +46,12 @@ https://bitcoin.org/en/developer-guide#block-chain-overview
 Dead Coins
 http://deadcoins.com/
 
+BlockStack
+https://blockstack.org/
+
+Blockstream satellite
+https://blockstream.com/satellite/
+
 Mastercard’s New Blockchain Is Interesting Because of What It Leaves Out
 https://www.technologyreview.com/the-download/609212/mastercards-new-blockchain-is-interesting-because-of-what-it-leaves-out/
 
