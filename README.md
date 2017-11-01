@@ -49,6 +49,9 @@ http://deadcoins.com/
 BlockStack
 https://blockstack.org/
 
+BitClave
+https://www.bitclave.com/en/
+
 Blockstream satellite
 https://blockstream.com/satellite/
 
@@ -168,6 +171,9 @@ https://runeksvendsen.github.io/blog/posts/2017-10-08-no-bitcoin-based-protocol-
 
 Cryptocurrency mining affects over 500 million people. And they have no idea it is happening.
 https://blog.adguard.com/en/crypto-mining-fever/
+
+Australia changes its tax (GST) regime to address cryptocurrencies
+https://hackernoon.com/australia-changes-its-tax-gst-regime-to-address-cryptocurrencies-63baf5b02d1a
 
 Blockchain — solution for the renewable energy market.
 https://hackernoon.com/blockchain-and-energy-market-2aa6add6e86e
