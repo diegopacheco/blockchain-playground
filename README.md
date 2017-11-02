@@ -58,6 +58,9 @@ https://www.bigchaindb.com/
 Blockstream satellite
 https://blockstream.com/satellite/
 
+One Bitcoin Transaction Now Uses as Much Energy as Your House in a Week
+https://motherboard.vice.com/en_us/article/ywbbpm/bitcoin-mining-electricity-consumption-ethereum-energy-climate-change
+
 Mastercard’s New Blockchain Is Interesting Because of What It Leaves Out
 https://www.technologyreview.com/the-download/609212/mastercards-new-blockchain-is-interesting-because-of-what-it-leaves-out/
 
