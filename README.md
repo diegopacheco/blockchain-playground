@@ -52,6 +52,9 @@ https://blockstack.org/
 BitClave
 https://www.bitclave.com/en/
 
+BigchainDB
+https://www.bigchaindb.com/
+
 Blockstream satellite
 https://blockstream.com/satellite/
 
