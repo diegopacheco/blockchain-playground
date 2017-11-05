@@ -46,6 +46,12 @@ https://bitcoin.org/en/developer-guide#block-chain-overview
 Dead Coins
 http://deadcoins.com/
 
+Lightstreams White Paper
+https://github.com/lightstreams/lightstreams/blob/master/white-paper.md
+
+Permissioned Blocks White Paper
+https://github.com/autocontracts/permissioned-blocks/blob/master/whitepaper.md
+
 BlockStack
 https://blockstack.org/
 
