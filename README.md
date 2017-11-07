@@ -25,6 +25,9 @@ https://thebitcoin.pub/t/wip-epic-bitcoin-resource-list-rocket-bomb-fire/6811?u=
 Burger King launches WhopperCoin crypto-cash in Russia
 http://www.bbc.com/news/technology-41082388
 
+A major vulnerability has frozen hundreds of millions of dollars of Ethereum
+https://techcrunch.com/2017/11/07/a-major-vulnerability-has-frozen-hundreds-of-millions-of-dollars-of-ethereum/
+
 Blockchain Guide
 https://mycrypto.guide/
 
