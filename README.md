@@ -28,6 +28,9 @@ http://www.bbc.com/news/technology-41082388
 A major vulnerability has frozen hundreds of millions of dollars of Ethereum
 https://techcrunch.com/2017/11/07/a-major-vulnerability-has-frozen-hundreds-of-millions-of-dollars-of-ethereum/
 
+The $280M Ethereum bug.
+https://blog.comae.io/the-280m-ethereums-bug-f28e5de43513
+
 Blockchain Guide
 https://mycrypto.guide/
 
