@@ -10,6 +10,9 @@ https://www.youtube.com/watch?v=l9jOJk30eQs
 Cryptocurrency Market Map
 http://cryptomaps.org/
 
+HashGraph
+https://hashgraph.com/
+
 Why Cryptocurrency are falling - Market Analysis (2017)
 https://www.youtube.com/watch?v=7rDid6M8GGU
 
