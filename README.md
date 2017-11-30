@@ -16,6 +16,9 @@ https://hashgraph.com/
 Why Cryptocurrency are falling - Market Analysis (2017)
 https://www.youtube.com/watch?v=7rDid6M8GGU
 
+Blockchain never forgets… and neither do the tax collectors…
+https://hackernoon.com/blockchain-never-forgets-also-not-your-taxes-52a76865b926
+
 A hacker stole $31M of Ether — how it happened, and what it means for Ethereum
 https://medium.freecodecamp.org/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce
 
