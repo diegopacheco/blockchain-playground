@@ -16,6 +16,9 @@ http://cryptomaps.org/
 HashGraph
 https://hashgraph.com/
 
+SEC cools traders’ hot plans for cryptocurrency-based exchange traded funds
+https://techcrunch.com/2018/01/18/crypto-killjoys/?ncid=rss
+
 Why Cryptocurrency are falling - Market Analysis (2017)
 https://www.youtube.com/watch?v=7rDid6M8GGU
 
