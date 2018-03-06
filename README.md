@@ -7,11 +7,23 @@ Fun with Blockchain tech such as Ethereum, Bitcoin and Cryptocurrencies.
 How BitCoin Works
 https://www.youtube.com/watch?v=l9jOJk30eQs
 
+Dharma
+https://dharma.io/
+
 Cryptocurrency Market Map
 http://cryptomaps.org/
 
+HashGraph
+https://hashgraph.com/
+
+SEC cools traders’ hot plans for cryptocurrency-based exchange traded funds
+https://techcrunch.com/2018/01/18/crypto-killjoys/?ncid=rss
+
 Why Cryptocurrency are falling - Market Analysis (2017)
 https://www.youtube.com/watch?v=7rDid6M8GGU
+
+Blockchain never forgets… and neither do the tax collectors…
+https://hackernoon.com/blockchain-never-forgets-also-not-your-taxes-52a76865b926
 
 A hacker stole $31M of Ether — how it happened, and what it means for Ethereum
 https://medium.freecodecamp.org/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce
@@ -25,8 +37,17 @@ https://thebitcoin.pub/t/wip-epic-bitcoin-resource-list-rocket-bomb-fire/6811?u=
 Burger King launches WhopperCoin crypto-cash in Russia
 http://www.bbc.com/news/technology-41082388
 
+A major vulnerability has frozen hundreds of millions of dollars of Ethereum
+https://techcrunch.com/2017/11/07/a-major-vulnerability-has-frozen-hundreds-of-millions-of-dollars-of-ethereum/
+
+The $280M Ethereum bug.
+https://blog.comae.io/the-280m-ethereums-bug-f28e5de43513
+
 Blockchain Guide
 https://mycrypto.guide/
+
+TLS-N
+https://tls-n.org/
 
 Blockchain DEMO
 https://anders.com/blockchain/
@@ -42,6 +63,30 @@ https://bitcoin.org/en/developer-guide#block-chain-overview
 
 Dead Coins
 http://deadcoins.com/
+
+Lightstreams White Paper
+https://github.com/lightstreams/lightstreams/blob/master/white-paper.md
+
+Permissioned Blocks White Paper
+https://github.com/autocontracts/permissioned-blocks/blob/master/whitepaper.md
+
+BlockStack
+https://blockstack.org/
+
+BitClave
+https://www.bitclave.com/en/
+
+BigchainDB
+https://www.bigchaindb.com/
+
+Blockstream satellite
+https://blockstream.com/satellite/
+
+One Bitcoin Transaction Now Uses as Much Energy as Your House in a Week
+https://motherboard.vice.com/en_us/article/ywbbpm/bitcoin-mining-electricity-consumption-ethereum-energy-climate-change
+
+Mastercard’s New Blockchain Is Interesting Because of What It Leaves Out
+https://www.technologyreview.com/the-download/609212/mastercards-new-blockchain-is-interesting-because-of-what-it-leaves-out/
 
 Tendermint
 https://tendermint.com/
@@ -147,6 +192,28 @@ https://techcrunch.com/2017/07/25/sec-regulators-are-coming-after-icos/?ncid=rss
 
 TANGLE(Futuro)
 http://ukcryptocurrency.com/iota/tangle-vs-blockchain/
+
+Blockchain Could Help Us Reclaim Control of Our Personal Data
+https://hbr.org/2017/10/smart-ledgers-can-help-us-reclaim-control-of-our-personal-data
+
+No Bitcoin-based protocol can handle more than 20M users per month
+https://runeksvendsen.github.io/blog/posts/2017-10-08-no-bitcoin-based-protocol-can-handle-more-than-20m-users-per-month.html
+
+Cryptocurrency mining affects over 500 million people. And they have no idea it is happening.
+https://blog.adguard.com/en/crypto-mining-fever/
+
+Australia changes its tax (GST) regime to address cryptocurrencies
+https://hackernoon.com/australia-changes-its-tax-gst-regime-to-address-cryptocurrencies-63baf5b02d1a
+
+Blockchain — solution for the renewable energy market.
+https://hackernoon.com/blockchain-and-energy-market-2aa6add6e86e
+https://wepower.network/
+
+Colony
+https://colony.io/
+
+Coin-Launch
+https://coinlaunch.market/
 
 Outros
 https://techcrunch.com/2017/08/02/wtf-is-bitcoin-cash-and-is-it-worth-anything/?ncid=rss
