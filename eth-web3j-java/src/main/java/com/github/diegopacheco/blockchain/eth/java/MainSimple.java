@@ -21,11 +21,12 @@ public class MainSimple {
 				
 			 String infuraKey  = System.getProperty("infuraKey","");
 			 String masterPWD  = System.getProperty("masterPWD","");
+			 String walletFile = System.getProperty("walletFile","");
 			
 			 Web3j web3j = Web3j.build(new HttpService("https://rinkeby.infura.io/" + infuraKey)); 
 			 log.info("Connected to Ethereum client version: "  + web3j.web3ClientVersion().send().getWeb3ClientVersion());
 			
-		   Credentials credentials = WalletUtils.loadCredentials(masterPWD,"/home/diego/.ethereum/testnet/keystore/");
+		   Credentials credentials = WalletUtils.loadCredentials(masterPWD,"/home/diego/.ethereum/testnet/keystore/" + walletFile);
 		   log.info("Credentials loaded " + credentials);
 		   
 		   log.info("Sending 1 Wei (" + Convert.fromWei("1", Convert.Unit.ETHER).toPlainString() + " Ether)");
