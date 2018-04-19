@@ -22,4 +22,5 @@ Audiction.deployed().then(instance => instance.getBidInitialPrice.call())
 
 Audiction.deployed().then(instance => instance.placeBid("PS4",2000))
 Audiction.deployed().then(instance => instance.finishBid("PS4"))
+Audiction.deployed().then(instance => instance.getBestValue.call())
 ```

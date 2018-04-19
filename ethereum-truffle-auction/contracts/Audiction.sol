@@ -1,6 +1,7 @@
 pragma solidity ^0.4.8;
 
 contract Audiction {
+    event Trace(string);
 
     struct Bid {
         string item;
@@ -12,7 +13,7 @@ contract Audiction {
     address public bestBid;
     uint public bestValue;
     bool public ended;
-    mapping(address => Bid[]) public bids;
+    mapping (address => uint) bids;
 
     function startBid(string auctionItem,uint initialPrice) public {
       beneficiary = msg.sender;
@@ -22,11 +23,8 @@ contract Audiction {
 
     function placeBid(string auctionItem,uint bidValue) public {
       if (compareStrings(bid.item,auctionItem)){
-          address bidder = msg.sender;
-          Audiction a = Audiction(bidder);
-          uint result = a.getBestValue();
-          if (bidValue > result){
-               bestBid = bidder;
+          if (bidValue > bestValue){
+               bestBid = msg.sender;
                bestValue = bidValue;
           }
       }
