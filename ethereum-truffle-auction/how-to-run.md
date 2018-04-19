@@ -16,10 +16,10 @@ truffle console
 On Truffle Console...
 ```js
 Audiction.deployed()
-Audiction.deployed().then(instance => instance.startBid.call("PS4",367).then())
-Audiction.deployed().then(instance => instance.getBidItem.call().then())
-Audiction.deployed().then(instance => instance.getBidInitialPrice.call().then())
+Audiction.deployed().then(instance => instance.startBid("PS4",967))
+Audiction.deployed().then(instance => instance.getBidItem.call())
+Audiction.deployed().then(instance => instance.getBidInitialPrice.call())
 
-Audiction.deployed().then(instance => instance.placeBid.call("PS4",2000).then())
-Audiction.deployed().then(instance => instance.finishBid.call("PS4").then())
+Audiction.deployed().then(instance => instance.placeBid("PS4",2000))
+Audiction.deployed().then(instance => instance.finishBid("PS4"))
 ```

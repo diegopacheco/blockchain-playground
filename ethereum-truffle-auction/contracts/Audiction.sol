@@ -7,18 +7,12 @@ contract Audiction {
         uint initialPrice;
     }
 
-    Bid bid;
+    Bid public bid;
     address public beneficiary;
     address public bestBid;
     uint public bestValue;
     bool public ended;
     mapping(address => Bid[]) public bids;
-
-    function Audiction() public {
-      beneficiary = msg.sender;
-      bid = Bid("",0);
-      ended = false;
-    }
 
     function startBid(string auctionItem,uint initialPrice) public {
       beneficiary = msg.sender;
