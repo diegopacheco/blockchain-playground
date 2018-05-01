@@ -14,6 +14,9 @@ repositories {
 
 dependencies {
   compile group: 'org.ethereum', name: 'ethereumj-core', version: '1.7.2-RELEASE'
+  
+  compile group: 'org.web3j', name: 'crypto', version: '3.4.0'
+  compile group: 'org.web3j', name: 'utils', version: '3.4.0'
     
   testCompile([
       'junit:junit:4.12'
