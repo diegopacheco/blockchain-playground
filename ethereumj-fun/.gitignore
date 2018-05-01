@@ -1,7 +1,7 @@
 
 
 # Created by https://www.gitignore.io/api/java,eclipse
-
+sampleDB-0/
 testnetSampleDb/
 eth-data/
 database/

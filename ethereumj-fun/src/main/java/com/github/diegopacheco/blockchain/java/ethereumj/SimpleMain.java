@@ -1,15 +1,21 @@
 package com.github.diegopacheco.blockchain.java.ethereumj;
 
-import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.List;
 
+import org.bouncycastle.util.encoders.Hex;
+import org.ethereum.config.SystemProperties;
 import org.ethereum.core.Block;
+import org.ethereum.crypto.ECKey;
 import org.ethereum.facade.Ethereum;
 import org.ethereum.facade.EthereumFactory;
 import org.ethereum.listener.EthereumListenerAdapter;
-import org.ethereum.net.rlpx.Node;
-import org.web3j.crypto.ECKeyPair;
-import org.web3j.utils.Numeric;
+import org.springframework.context.annotation.Bean;
+
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
+import com.typesafe.config.ConfigValue;
+import com.typesafe.config.ConfigValueFactory;
 
 /**
  * 
@@ -17,17 +23,39 @@ import org.web3j.utils.Numeric;
  *
  */
 public class SimpleMain extends EthereumListenerAdapter {
-
+	
 	private boolean syncDone = false;
-	private static Ethereum ethereum = EthereumFactory.createEthereum();
-
+	
+	private static Ethereum ethereum = EthereumFactory.createEthereum(NodeConfig.class);
+	
+	 private static class NodeConfig {
+     @Bean
+     public SystemProperties systemProperties() {
+    	 	return new SystemProperties(getConfig(0,"127.0.0.1:20000"));
+     }
+	 } 
+	
+  private static Config getConfig(int index, String discoveryNode) {
+    return ConfigFactory.empty()
+            .withValue("peer.discovery.enabled", value(true))
+            .withValue("peer.discovery.external.ip", value("127.0.0.1"))
+            .withValue("peer.discovery.bind.ip", value("127.0.0.1"))
+            .withValue("peer.discovery.persist", value("false"))
+            .withValue("peer.listen.port", value(20000 + index))
+            .withValue("peer.privateKey", value(Hex.toHexString(ECKey.fromPrivate(("" + index).getBytes()).getPrivKeyBytes())))
+            .withValue("peer.networkId", value(555))
+            .withValue("sync.enabled", value(true))
+            .withValue("database.incompatibleDatabaseBehavior", value("RESET"))
+            .withValue("genesis", value("sample-genesis.json"))
+            .withValue("database.dir", value("sampleDB-" + index))
+            .withValue("peer.discovery.ip.list", value(discoveryNode != null ? Arrays.asList(discoveryNode) : Arrays.asList()));
+  }
+	
+  private static ConfigValue value(Object value) {
+    return ConfigValueFactory.fromAnyRef(value);
+  }
+	
 	public static void main(String[] args) throws Exception {
-		
-		final ECKeyPair keyPair = ECKeyPair.create(Numeric.toBigInt("0x6771f2757b6717a202735a599d8215ee15f111c4"));
-		BigInteger publicKey = keyPair.getPublicKey();
-		
-		String url = "enode://" + publicKey + "@localhost:8545";
-		ethereum.connect(new Node(url));
 	}
 
 	@Override
