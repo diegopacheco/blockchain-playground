@@ -28,7 +28,11 @@ import org.springframework.context.annotation.Bean;
  * Local network: 
  * 
  * geth --datadir ./eth-data/ init src/main/resources/genesis/frontier.json
+ * geth --datadir ./eth-data/ init mygenesis.json
  * geth --port 40303 --datadir ./eth-data/ src/main/resources/genesis/frontier.json
+ * geth --port 40303 --datadir="eth-data" --networkid 15 --nodiscover consol
+ * geth --identity "NodeMain" --rpc --rpcport "8000" --rpccorsdomain "*" --datadir "eth-data" --port "40303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 15 --nat "any" console
+ * geth --identity "NodeMain" --rpc --rpcport "8000" --rpccorsdomain "*" --datadir "eth-data" --port "40303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 15 console --nat "any"
  * 
  * @author diegopacheco
  *
