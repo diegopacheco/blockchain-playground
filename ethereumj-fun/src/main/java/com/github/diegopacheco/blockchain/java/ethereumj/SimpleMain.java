@@ -25,7 +25,10 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * 
- * Local network: docker run -p 30304:30303 smartcontract/devnet
+ * Local network: 
+ * 
+ * geth --datadir ./eth-data/ init src/main/resources/genesis/frontier.json
+ * geth --port 40303 --datadir ./eth-data/ src/main/resources/genesis/frontier.json
  * 
  * @author diegopacheco
  *
