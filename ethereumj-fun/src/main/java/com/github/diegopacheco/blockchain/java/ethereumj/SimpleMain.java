@@ -56,6 +56,7 @@ public class SimpleMain extends EthereumListenerAdapter {
   }
 	
 	public static void main(String[] args) throws Exception {
+		ethereum.addListener(new SimpleMain());
 	}
 
 	@Override
