@@ -1,12 +1,22 @@
 package com.github.diegopacheco.blockchain.pocs.ethereumj.simple;
 
 import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.Collections;
 
+import org.web3j.abi.FunctionEncoder;
+import org.web3j.abi.TypeReference;
+import org.web3j.abi.datatypes.Function;
+import org.web3j.abi.datatypes.Type;
+import org.web3j.abi.datatypes.generated.Uint256;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.DefaultBlockParameter;
-import org.web3j.protocol.core.methods.response.TransactionReceipt;
+import org.web3j.protocol.core.DefaultBlockParameterName;
+import org.web3j.protocol.core.methods.request.Transaction;
+import org.web3j.protocol.core.methods.response.EthGetTransactionCount;
+import org.web3j.protocol.core.methods.response.EthSendTransaction;
 import org.web3j.protocol.http.HttpService;
 
 public class Main {
@@ -28,11 +38,35 @@ public class Main {
 		SimpleStorage ss = SimpleStorage.load(address, web3j,c, BigInteger.ONE, gasLimit);
 		System.out.println("SimpleStorage: " + ss);
 		
-		TransactionReceipt tr = ss.set(BigInteger.TEN).send();
-		System.out.println("TX set result: " + tr);
+    EthGetTransactionCount ethGetTransactionCount = web3j.ethGetTransactionCount(c.getAddress(),DefaultBlockParameterName.LATEST).send();
+    BigInteger count = ethGetTransactionCount.getTransactionCount();
+
+    Function function = new Function(
+    		"set",
+    		Arrays.<Type>asList(new org.web3j.abi.datatypes.generated.Uint256(BigInteger.TEN)), //Arrays.<Type>asList(new org.web3j.abi.datatypes.Utf8String("10")),
+    		Collections.<TypeReference<?>>emptyList());
+    
+    String encodedFunction = FunctionEncoder.encode(function);
+
+    Transaction transaction = Transaction.createFunctionCallTransaction(c.getAddress(),count, ss.getGasPrice(), gasLimit, ss.getContractAddress(),  encodedFunction);
+    System.out.println("TX: " + transaction.getData());
+    
+    EthSendTransaction transactionResponse = web3j.ethSendTransaction(transaction).send();
+    System.out.println("TX Response SET: " + transactionResponse.getId()  + " - " +transactionResponse.getJsonrpc());
 		
-		BigInteger result = ss.get().send();
-		System.out.println("Tx get Result: " + result);
+    Function functionGet = new Function(
+    		"get",
+    		Arrays.<Type>asList(), 
+        Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {}));
+    
+    String encodedFunctionGet = FunctionEncoder.encode(functionGet);
+
+    Transaction transactionGet = Transaction.createFunctionCallTransaction(c.getAddress(),count, ss.getGasPrice(), gasLimit, ss.getContractAddress(),  encodedFunctionGet);
+    System.out.println("TX: " + transaction.getData());
+    
+    EthSendTransaction transactionResponseGet = web3j.ethSendTransaction(transactionGet).send();
+    System.out.println("TX Response GET: " + transactionResponseGet.getId()  + " - " + transactionResponseGet.getJsonrpc());
+    
 	}
 	
 }
