@@ -2,7 +2,6 @@ package com.github.diegopacheco.blockchain.pocs.ethereumj.simple;
 
 import java.math.BigInteger;
 
-import org.web3j.abi.datatypes.Address;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
 import org.web3j.protocol.Web3j;
@@ -14,7 +13,7 @@ public class Main {
 	
 	public static void main(String[] args) throws Throwable {
 		
-		Credentials c = WalletUtils.loadCredentials("123456", "wallet/UTC--2018-06-01T05-35-28.178000000Z--41837a2f9b3ee55165bd2692878ddfcec44330fe.json");
+		Credentials c = WalletUtils.loadCredentials("123456", "wallet/UTC--2018-06-01T06-41-04.272000000Z--647a58fd17196282d92f4a73d1db1e0337616226.json");
 		String address = c.getAddress();
 		System.out.println("Wallet Address " + address);
 		System.out.println("Wallet Private Key: " +	c.getEcKeyPair().getPrivateKey());
@@ -26,18 +25,14 @@ public class Main {
 		BigInteger gasLimit =  web3j.ethGetBlockByNumber(DefaultBlockParameter.valueOf("latest"),true).send().getBlock().getGasLimit();
 		System.out.println("Gas Limit: " + gasLimit);
 		
-		Deliverables deliverables = Deliverables.load(address, web3j,c, BigInteger.ONE, BigInteger.ONE);
-		System.out.println("Deliverables: " + deliverables);
+		SimpleStorage ss = SimpleStorage.load(address, web3j,c, BigInteger.ONE, gasLimit);
+		System.out.println("SimpleStorage: " + ss);
 		
-		String hash = web3j.web3Sha3("CONTENTS").send().getResult();
-		System.out.println("Hash: " + hash);
+		TransactionReceipt tr = ss.set(BigInteger.TEN).send();
+		System.out.println("TX set result: " + tr);
 		
-		Address deliverable = new Address(address);
-		System.out.println("Address: " + deliverable);
-		
-	  TransactionReceipt result = deliverables.store(address.toString()).send();
-		System.out.println("Tx Result: " + result);
-	  
+		BigInteger result = ss.get().send();
+		System.out.println("Tx get Result: " + result);
 	}
 	
 }
