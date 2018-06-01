@@ -38,12 +38,16 @@ public class Main {
 		SimpleStorage ss = SimpleStorage.load(address, web3j,c, BigInteger.ONE, gasLimit);
 		System.out.println("SimpleStorage: " + ss);
 		
+		//
+		// SET
+		//
+		
     EthGetTransactionCount ethGetTransactionCount = web3j.ethGetTransactionCount(c.getAddress(),DefaultBlockParameterName.LATEST).send();
     BigInteger count = ethGetTransactionCount.getTransactionCount();
 
     Function function = new Function(
     		"set",
-    		Arrays.<Type>asList(new org.web3j.abi.datatypes.generated.Uint256(BigInteger.TEN)), //Arrays.<Type>asList(new org.web3j.abi.datatypes.Utf8String("10")),
+    		Arrays.<Type>asList(new Uint256(BigInteger.TEN)), //Arrays.<Type>asList(new org.web3j.abi.datatypes.Utf8String("10")),
     		Collections.<TypeReference<?>>emptyList());
     
     String encodedFunction = FunctionEncoder.encode(function);
@@ -53,7 +57,15 @@ public class Main {
     
     EthSendTransaction transactionResponse = web3j.ethSendTransaction(transaction).send();
     System.out.println("TX Response SET: " + transactionResponse.getId()  + " - " +transactionResponse.getJsonrpc());
-		
+    System.out.println("Error ? : " + transactionResponse.getError());
+    
+    //
+    // GET
+    //
+    
+    ethGetTransactionCount = web3j.ethGetTransactionCount(c.getAddress(),DefaultBlockParameterName.LATEST).send();
+    count = ethGetTransactionCount.getTransactionCount();
+    
     Function functionGet = new Function(
     		"get",
     		Arrays.<Type>asList(), 
@@ -66,6 +78,11 @@ public class Main {
     
     EthSendTransaction transactionResponseGet = web3j.ethSendTransaction(transactionGet).send();
     System.out.println("TX Response GET: " + transactionResponseGet.getId()  + " - " + transactionResponseGet.getJsonrpc());
+    System.out.println("TX Response GET: " + transactionResponseGet.getResult());
+    System.out.println("TX Response GET: " + transactionResponseGet.getRawResponse());
+    System.out.println("TX Response GET: " + transactionResponseGet.getJsonrpc());
+    System.out.println("TX Response GET: " + transactionResponseGet.getTransactionHash());
+    System.out.println("Error ? : " + transactionResponseGet.getError());
     
 	}
 	
