@@ -16,6 +16,9 @@ http://cryptomaps.org/
 HashGraph
 https://hashgraph.com/
 
+CovenantForum
+https://github.com/CovenantSQL/CovenantForum
+
 SEC cools traders’ hot plans for cryptocurrency-based exchange traded funds
 https://techcrunch.com/2018/01/18/crypto-killjoys/?ncid=rss
 
